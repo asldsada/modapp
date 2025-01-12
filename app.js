@@ -67,7 +67,9 @@ function calmaListesiGoster(calmaListesi) {
         calinanModElemani.textContent = calinanMod; // çalınan modun adı p elemanuna ekleniyor
         calmaListesiElemani.append(calinanModElemani);
     });
+
     const toplamModElemani = document.createElement("p"); 
-    toplamModElemani.textContent = calmaListesi.length; 
+    toplamModElemani.className = "mod-sayisi";
+    toplamModElemani.textContent = calmaListesi.length + " mod çalınıyor"; 
     calmaListesiElemani.append(toplamModElemani);
 }
